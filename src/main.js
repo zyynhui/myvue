@@ -6,6 +6,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 
+
 // 创建全局的时间过滤器    data   date
 import moment from 'moment' // 导入格式化时间的包
 Vue.filter('dateFormat', function (val) {
