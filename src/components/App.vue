@@ -26,7 +26,7 @@
 				<span class="mui-tab-label">会员</span>
 			</router-link>
 			<router-link class="mui-tab-item-my" to="/cart">
-				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge">0</span></span>
+				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge" id="badge">{{ totalcount }}</span></span>
 				<span class="mui-tab-label">购物车</span>
 			</router-link>
 			<router-link class="mui-tab-item-my" to="/search">
@@ -41,6 +41,8 @@
 <script>
 // 导入加载提示框
 import { Indicator } from "mint-ui";
+
+import { mapGetters } from "vuex"
 
 export default {
   data() {
@@ -89,6 +91,10 @@ export default {
       },
       immediate: true // 衡水老白干
     }
+  },
+
+  computed: {
+   ...mapGetters(["totalcount"])
   }
 };
 </script>

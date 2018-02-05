@@ -28,7 +28,7 @@ const router = new VueRouter({
     { path: '/home/photoinfo/:id', component: PhotoInfo, props: true },
     { path: '/home/goodslist', component: GoodsList },
     {path:'/home/goodsinfo/:id',component:GoodsInfo,props:true},
-    {path:'./home/goodsdesc/:id',component:GoodsDesc,props:true},
+    {path:'/home/goodsdesc/:id',component:GoodsDesc,props:true},  
     {path:'/home/goodscmt/:id',component:GoodsCmt,props:true}
   ],
   linkActiveClass: 'mui-active' // 设置路由高亮的类名

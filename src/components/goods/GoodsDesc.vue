@@ -1,6 +1,6 @@
 <template>
     
-    <div class="goodsdesc-container">
+     <div class="goodsdesc-container">
       <h3 class="title">{{ goodsDesc.title}}</h3>
     <hr>
 
@@ -8,7 +8,12 @@
 
     </div>
 
-    </div>
+    </div> 
+
+
+
+
+
 </template>
 
 
